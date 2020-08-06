@@ -1,0 +1,28 @@
+{
+  "name": "clipboard-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.html",
+  "scripts": {
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run stylelint",
+    "start": "parcel source/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingotr/clipboard-landing-page-master.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingotr/clipboard-landing-page-master/issues"
+  },
+  "homepage": "https://github.com/ingotr/clipboard-landing-page-master#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10",
+    "stylelint": "^13.6.1",
+    "stylelint-config-htmlacademy": "^0.1.4"
+  }
+}
