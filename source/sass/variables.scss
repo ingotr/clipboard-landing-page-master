@@ -1,5 +1,21 @@
-$main-font-family: "Open Sans";
+//  colors
+$main-header-img-color: hsl(22, 11%, 97%);
+$feature-text-color: #4c545c;
+$features-description-color: #9eabb2;
+$download-btn-text-color: #fff;
+$download-btn-iOS-color: hsl(171, 66%, 44%);
+$download-btn-Mac-color: hsl(233, 100%, 69%);
+$attribution-link-color: hsl(228, 45%, 44%);
+
+//  fonts
+$main-font-family: "Bai Jamjuree";
 $secondary-font-family: "Arial";
 $web-safe-font-family: sans-serif;
 $normal-font-path: "../fonts/BaiJamjuree-Regular";
 $semibold-font-path: "../fonts/BaiJamjuree-SemiBold";
+
+//  resolution
+$mobile-width: 375px;
+$desktop-width: 1440px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

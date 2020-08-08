@@ -1,0 +1,70 @@
+.main-header {
+  margin-top: 75px;
+  margin-right: 32px;
+  margin-bottom: 137px;
+  margin-left: 32px;
+}
+
+.main-header {
+  background-color: $main-header-img-color;
+  background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(255, 255, 255, 0.993)
+    ),
+    url("../images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../images/bg-header-desktop.png");
+    background-size: cover 363;
+  }
+}
+
+.feature-text {
+  color: $feature-text-color;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.feature-description {
+  color: $features-description-color;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.download-btn {
+  display: block;
+  width: 160px;
+  height: 53px;
+}
+
+.download-btn span {
+  color: $download-btn-text-color;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+}
+
+.download-btn--iOS {
+  background-color: $download-btn-iOS-color;
+}
+
+.download-btn--Mac {
+  background-color: $download-btn-Mac-color;
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    background-size: cover 363px;
+  }
+}

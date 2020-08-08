@@ -1,0 +1,26 @@
+.main-footer {
+  background-color: $main-header-img-color;
+
+  margin-top: 64px;
+  margin-right: 92px;
+  margin-bottom: 71px;
+  margin-left: 91px;
+}
+
+.nav-item a {
+  color: $feature-text-color;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: $attribution-link-color;
+}

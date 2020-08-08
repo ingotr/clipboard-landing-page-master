@@ -1,0 +1,10 @@
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fff;
+  font-family: $main-font-family, $secondary-font-family, $web-safe-font-family;
+}
