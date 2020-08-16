@@ -5,6 +5,12 @@
   margin-left: 32px;
 }
 
+.main-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-header {
   background-color: $main-header-img-color;
   background-image: linear-gradient(
@@ -20,6 +26,14 @@
     background-image: url("../images/bg-header-desktop.png");
     background-size: cover 363;
   }
+}
+
+.main-header__logo {
+  margin-top: 123px;
+}
+
+.feature--block {
+  width: $mobile-feature-block;
 }
 
 .feature-text {
@@ -66,5 +80,13 @@
 @media (min-width: $desktop-width) {
   .main-header {
     background-size: cover 363px;
+  }
+
+  .main-header__logo {
+    margin-top: 128px;
+  }
+
+  .feature--block {
+    width: $desktop-feature-block;
   }
 }
