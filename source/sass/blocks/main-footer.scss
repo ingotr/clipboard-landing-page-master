@@ -9,6 +9,12 @@
   justify-content: center;
 }
 
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-footer__logo {
   margin-top: 53px;
   margin-bottom: 40px;

@@ -1,7 +1,7 @@
 .keep-track {
   margin-top: 75px;
   margin-right: 32px;
-  margin-bottom: 137px;
+  margin-bottom: 110px;
   margin-left: 32px;
 }
 
@@ -23,11 +23,13 @@
   align-items: center;
 }
 
-.keep-track img {
-  //   background-color: $download-btn-iOS-color;
+.keep-track__inner-image {
+  background-image: url("../images/image-computer.png");
+  background-size: $mobile-feature-block 238px;
+  background-repeat: no-repeat;
+  margin-bottom: 56px;
   width: $mobile-feature-block;
   height: 238px;
-  margin-bottom: 56px;
 }
 
 .feature-item {
@@ -64,24 +66,34 @@
 }
 
 @media (min-width: $desktop-width) {
-  .keep-track img {
-    width: 752px;
-    height: 572px;
-    margin-right: 130px;
-  }
-
   .keep-track-header {
-    margin-bottom: 60px;
+    margin-bottom: 120px;
   }
 
   .keep-track__wrapper--inner {
     flex-direction: row;
     left: -32px;
+    position: relative;
+  }
+
+  .keep-track__inner-image {
+    background-image: url("../images/image-computer.png");
+    background-size: 752px 572px;
+    background-position: -32px 0;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    margin-right: 130px;
+    width: 752px;
+    height: 572px;
+    left: -21em;
+    top: -21%;
+    position: absolute;
   }
 
   .features-list {
     flex-direction: column;
     align-items: flex-start;
+    padding-left: 43em;
   }
 
   .feature-item {

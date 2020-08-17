@@ -1,11 +1,10 @@
 .access-anywhere {
-  margin-bottom: 161px;
+  margin-bottom: 110px;
 }
 
 .access-anywhere img {
   width: $mobile-feature-block;
   height: 238px;
-  margin-bottom: 56px;
 }
 
 .access-anywhere__wrapper {
@@ -16,7 +15,7 @@
 
 @media (min-width: $desktop-width) {
   .access-anywhere {
-    margin-bottom: 130px;
+    margin-bottom: 60px;
   }
 
   .access-anywhere img {
