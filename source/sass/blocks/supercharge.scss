@@ -1,6 +1,66 @@
-.access-anywhere {
-  margin-top: 75px;
-  margin-right: 32px;
-  margin-bottom: 116px;
-  margin-left: 32px;
+.supercharge {
+  margin-bottom: 132px;
+}
+
+.supercharge__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.supercharge-header {
+  margin-bottom: 90px;
+}
+
+.icon-feature-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.icon-feature-item img {
+  margin-bottom: 40px;
+}
+
+.icon-feature-item h4 {
+  margin-bottom: 18px;
+}
+
+.icon-feature-item p {
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .supercharge {
+    margin-bottom: 150px;
+  }
+
+  .supercharge-header {
+    margin-bottom: 72px;
+  }
+
+  .icon-feature-list {
+    flex-direction: row;
+  }
+
+  .icon-feature-item {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  .icon-feature-item h4 {
+    margin-bottom: 16px;
+  }
+
+  .icon-feature-item p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+  }
 }
