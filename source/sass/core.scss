@@ -9,6 +9,12 @@ body {
   font-family: $main-font-family, $secondary-font-family, $web-safe-font-family;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: $mobile-width;
   margin: 0 auto;

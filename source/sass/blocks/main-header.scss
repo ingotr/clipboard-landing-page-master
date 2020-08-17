@@ -1,17 +1,5 @@
 .main-header {
-  margin-top: 75px;
-  margin-right: 32px;
-  margin-bottom: 137px;
-  margin-left: 32px;
-}
-
-.main-header-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main-header {
+  margin-bottom: 160px;
   background-color: $main-header-img-color;
   background-image: linear-gradient(
       to bottom,
@@ -21,11 +9,18 @@
     url("../images/bg-header-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../images/bg-header-desktop.png");
-    background-size: cover 363;
+    background-size: cover;
   }
+}
+
+.main-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-header__logo {
@@ -54,32 +49,57 @@
   text-align: center;
 }
 
+.main-header__btn-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .download-btn {
-  display: block;
-  width: 160px;
-  height: 53px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 311px;
+  height: 56px;
+  margin-bottom: 24px;
+  border-radius: 28px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .download-btn span {
   color: $download-btn-text-color;
   font-style: normal;
   font-weight: 600;
-  font-size: 13px;
-  line-height: 17px;
-  letter-spacing: 1.5px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
 }
 
 .download-btn--iOS {
   background-color: $download-btn-iOS-color;
 }
 
+.download-btn--iOS:hover {
+  background: #26bba4;
+  box-shadow: 0px 10px 20px rgba(137, 229, 199, 0.503305),
+    inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+}
+
 .download-btn--Mac {
   background-color: $download-btn-Mac-color;
 }
 
+.download-btn--Mac:hover {
+  background-color: #6174ff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0988035),
+    inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+}
+
 @media (min-width: $desktop-width) {
   .main-header {
-    background-size: cover 363px;
+    background-size: cover;
+    margin-bottom: 150px;
   }
 
   .main-header__logo {
@@ -88,5 +108,22 @@
 
   .feature--block {
     width: $desktop-feature-block;
+  }
+
+  .main-header__btn-list {
+    flex-direction: row;
+  }
+
+  .download-btn {
+    margin-bottom: 0;
+    margin-left: 16px;
+    width: 227px;
+    height: 56px;
+  }
+
+  .download-btn span {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
   }
 }
