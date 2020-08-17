@@ -16,12 +16,12 @@ ul {
 }
 
 .container {
-  width: $mobile-width;
+  max-width: $mobile-width;
   margin: 0 auto;
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: $desktop-width;
+    max-width: $desktop-width;
   }
 }

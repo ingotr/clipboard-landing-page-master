@@ -16,7 +16,8 @@
 @media (min-width: $desktop-width) {
   .brands-list {
     flex-direction: row;
-    margin: 0 17%;
+    justify-content: space-around;
+    margin: 0 5%;
   }
 
   .brand-item {
