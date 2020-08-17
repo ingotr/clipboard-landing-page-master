@@ -67,10 +67,16 @@
   .keep-track img {
     width: 752px;
     height: 572px;
+    margin-right: 130px;
+  }
+
+  .keep-track-header {
+    margin-bottom: 60px;
   }
 
   .keep-track__wrapper--inner {
     flex-direction: row;
+    left: -32px;
   }
 
   .features-list {
