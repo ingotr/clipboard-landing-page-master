@@ -6,7 +6,8 @@
   "scripts": {
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run stylelint",
-    "start": "parcel source/index.html"
+    "start": "parcel source/index.html",
+    "build": "parcel build source/index.html --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,6 @@
   "homepage": "https://github.com/ingotr/clipboard-landing-page-master#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.26.10",
     "stylelint": "^13.6.1",
     "stylelint-config-htmlacademy": "^0.1.4"
   }
